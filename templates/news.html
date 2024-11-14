@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Starship News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='news.css') }}">
+</head>
+<body>
+    <!-- Background Image with Overlay -->
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="{{ url_for('home') }}">&larr; Back</a>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="content">
+        <!-- Title -->
+        <h1>Latest Starship News</h1>
+
+        <!-- News Content (Loaded from news.txt) -->
+        <p id="news-content">SpaceX is targeting no earlier than November 18 for the 6th Flight of Starship with Booster 13 and Ship 31. Here is everything you need to know about it!   For Starship Flight 6, SpaceX will attempt to catch the booster (if all systems were healthy and ready for catch). The Ship will perform an in-space Raptor engine relight to demonstrate the capabilities required for de-orbiting. 
+            After the coast phase and the in-space relight, the upper stage will reenter the earth's atmosphere. The vehicle will fly at a higher angle of attack to put more stress on the flaps. SpaceX has also removed the heat shield of the area where the catch hardware will be placed in the future. After reentry, the Ship will perform its iconic flip maneuver and landing burn and softly splash down.  
+            The 30-minute launch window for this Flight will open at 4 p.m. CT. The new launch window (for the previous flights, it was during the morning) will make the splash down of the Ship happen during daylight. This will allow SpaceX to have better visual observations. In addition to that, it will be way cooler to see a Ship landing during the day from the buoy cam
+            The data gathered from Flight 5 helped SpaceX improve a lot of software and hardware for Flight 6 vehicles.   </p>
+    </div>
+
+    <!-- JavaScript to Load News Content -->
+    <!-- <script src="news.js"></script> -->
+</body>
+</html>
